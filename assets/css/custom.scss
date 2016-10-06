@@ -11,8 +11,21 @@
 }
 
 .jumbotron {
-  width: 100vw;
   min-height: 90%;
+}
+
+.half.jumbotron {
+  min-height: 300px;
+  .content {
+    background: none;
+    top: 200px !important;
+    display: block;
+    width: 100%;
+  }
+}
+
+.jumbotron {
+  width: 100vw;
   background: #1B1C1D;
   box-sizing: content-box;
 }

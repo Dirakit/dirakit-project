@@ -18,9 +18,12 @@
   min-height: 300px;
   .content {
     background: none;
-    top: 200px !important;
+    top: 150px !important;
     display: block;
     width: 100%;
+    h2 {
+      font-size: 1.2rem;
+    }
   }
 }
 

@@ -134,3 +134,11 @@ footer {
 article.profile {
   margin: 1rem 0 10rem 0;
 }
+
+.challenge .row ul {
+  padding: 0;
+}
+
+.challenge .row ul > li {
+  list-style: none;
+}

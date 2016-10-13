@@ -150,3 +150,7 @@ article.profile {
 .create-page .ui.three.column {
   margin: 20px 0;
 }
+
+.ui.form .inline.field>.selection.dropdown, .ui.form .inline.fields .field>.selection.dropdown {
+  width: 100% !important;
+}

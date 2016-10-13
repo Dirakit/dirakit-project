@@ -40,13 +40,13 @@
                     <div class="title">Nama Project</div>
                 </div>
             </div>
-            <div class="step active">
+            <div class="step completed">
                 <i class="newspaper icon"></i>
                 <div class="content">
                     <div class="title">Detail Project</div>
                 </div>
             </div>
-            <div class="step disabled">
+            <div class="step active">
                 <i class="rocket icon"></i>
                 <div class="content">
                     <div class="title">Alat &amp; Bahan</div>
@@ -67,46 +67,44 @@
         </div>
     </div>
     <div class="twelve wide column center aligned">
-        <h2 class="title">Detail Proyek</h2>
+        <h2 class="title">Alat &amp; Bahan</h2>
         <div class="row">
             <form action="#" class="ui form">
                 <div class="inline fields">
                     <div class="four wide field">
-                        Tingkat Kesulitan
+                        Hardware
                     </div>
                     <div class="twelve wide field">
-                        <select name="difficulty" id="difficulty" class="dropdown">
-                            <option value="">Difficulty</option>
-                            <option value="0">Beginner</option>
-                            <option value="1">Intermediate</option>
-                            <option value="2">Expert</option>
+                        <select name="hardware" id="hardware" class="dropdown" multiple>
+                            <option value="">Select Your Hardware</option>
+                            <option value="0">Raspberry Pi</option>
+                            <option value="1">Banana Pi</option>
+                            <option value="2">Beagle Bone</option>
+                            <option value="3">Intel Gallileo</option>
+                            <option value="4">Intel Genuino</option>
+                            <option value="5">Arduino</option>
                         </select>
                     </div>
                 </div>
                 <div class="inline fields">
                     <div class="four wide field">
-                        Waktu yang Dibutuhkan (menit)
+                        Software
                     </div>
                     <div class="twelve wide field">
-                        <input type="number" placeholder="1 jam = 60 menit">
-                    </div>
-                </div>
-                <div class="inline fields">
-                    <div class="four wide field">
-                        Tag
-                    </div>
-                    <div class="twelve wide field">
-                        <select name="tags" id="tags" class="dropdown" multiple>
-                            <option value="iot">IoT</option>
-                            <option value="robot">Robot</option>
-                            <option value="electronic">Electronic</option>
-                            <option value="mekatronik">Mekatronik</option>
+                        <select name="hardware" id="software" class="dropdown" multiple>
+                            <option value="">Select Your Software</option>
+                            <option value="0">Raspbian</option>
+                            <option value="1">Arduino SDK</option>
+                            <option value="2">Intel XDK</option>
+                            <option value="3">Android SDK</option>
+                            <option value="4">Unity</option>
+                            <option value="5">OpenGL SDK</option>
                         </select>
                     </div>
                 </div>
                 <div class="sixteen wide field center aligned">
-                    <a type="submit" class="ui button red">KEMBALI</a>
-                    <input type="submit" class="ui button blue" value="LANJUTKAN">
+                    <a href="challenge-2.html" class="ui button red">KEMBALI</a>
+                    <a href="challenge-4.html" class="ui button blue">LANJUTKAN</a>
                 </div>
             </form>
         </div>

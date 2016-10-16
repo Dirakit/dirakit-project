@@ -10,8 +10,14 @@
   }
 }
 
-.jumbotron {
+.jumbotron, .cover {
   min-height: 90%;
+  padding: 10rem 0;
+  color: white;
+}
+
+.overview.cover {
+  background-image: url('../images/home-smoke.jpg');
 }
 
 .half.jumbotron {
@@ -35,6 +41,9 @@
 
 header.jumbotron {
   background-image: url('../images/home3.jpg');
+}
+
+header.jumbotron, .overview.cover {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
@@ -135,11 +144,11 @@ article.profile {
   margin: 1rem 0 10rem 0;
 }
 
-.challenge .row ul {
+.challenge .row ul, ul.nolist {
   padding: 0;
 }
 
-.challenge .row ul > li {
+.challenge .row ul > li, ul.nolist > li {
   list-style: none;
 }
 
@@ -165,4 +174,12 @@ article.profile {
 
 .summary.users {
   color: #FDBF8B;
+}
+
+.overview .row {
+  margin: 1rem 0;
+}
+
+.overview .ui.statistics .statistic > .value , .overview .ui.statistics .statistic > .label {
+  color: white !important;
 }

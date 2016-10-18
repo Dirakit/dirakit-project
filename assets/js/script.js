@@ -11,5 +11,10 @@ $(document).ready(function () {
     $('.slider.control').click(function () {
         $('.ui.sidebar.inverted.vertical.menu').sidebar('toggle');
     });
+    $('img').visibility({
+        type: 'image',
+        transition: 'fade in',
+        duration: 1000
+    });
     /* End of Semantic UI Initialization */
 });

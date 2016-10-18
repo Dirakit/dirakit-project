@@ -9,134 +9,164 @@
 </head>
 <body>
 
-<div class="ui secondary menu">
-    <div class="ui grid container">
-        <div class="header item">
-            <img src="assets/images/logo-top.png" alt="Dirakit">
-        </div>
-        <a href="#!" class="active item">Project</a>
-        <a href="#!" class="item">Platform</a>
-        <a href="#!" class="item">Challenge</a>
-        <div class="right menu">
-            <div class="item">
-                <div class="ui icon input">
-                    <input type="text" placeholder="Search">
-                    <i class="search link icon"></i>
+<div class="ui sidebar inverted vertical menu">
+    <div class="ui input item">
+        <input type="text" placeholder="Search">
+        <i class="search link icon"></i>
+    </div>
+    <a class="item">Project</a>
+    <a class="item">Platform</a>
+    <a class="item">Challenge</a>
+    <a href="#" class="item"><i class="unlock alternate icon"></i> Login</a>
+    <a href="#" class="item"><i class="add user icon"></i> Buat Akun</a>
+
+</div>
+<div class="pusher">
+    <div class="ui grid container tablet mobile only">
+        <div class="ui secondary menu">
+            <div class="ui grid container">
+                <button class="item slider control"><i class="content icon"></i></button>
+                <div class="right menu">
+                    <div class="header item">
+                        <img src="assets/images/logo-top.png" alt="Dirakit">
+                    </div>
                 </div>
             </div>
-            <a href="#" class="item"><i class="unlock alternate icon"></i> Login</a>
-            <a href="#" class="item"><i class="add user icon"></i> Buat Akun</a>
         </div>
     </div>
-</div>
+    <div class="ui grid container computer only">
+        <div class="ui secondary menu">
+            <div class="ui grid container">
+                <div class="header item">
+                    <img src="assets/images/logo-top.png" alt="Dirakit">
+                </div>
+                <a href="#!" class="active item">Project</a>
+                <a href="#!" class="item">Platform</a>
+                <a href="#!" class="item">Challenge</a>
+                <div class="right menu">
+                    <div class="item">
+                        <div class="ui icon input">
+                            <input type="text" placeholder="Search">
+                            <i class="search link icon"></i>
+                        </div>
+                    </div>
+                    <a href="#" class="item"><i class="unlock alternate icon"></i> Login</a>
+                    <a href="#" class="item"><i class="add user icon"></i> Buat Akun</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<div class="create-page ui centered grid container">
-    <div class="fourteen wide column center aligned">
-        <h1><i class="trophy icon"></i> CHALLENGE</h1>
-        <div class="ui tiny steps">
-            <a href="challenge-1.html" class="step completed">
-                <i class="write icon"></i>
-                <div class="content">
-                    <div class="title">Nama Project</div>
-                </div>
-            </a>
-            <a href="challenge-2.html" class="step completed">
-                <i class="newspaper icon"></i>
-                <div class="content">
-                    <div class="title">Detail Project</div>
-                </div>
-            </a>
-            <a href="challenge-3.html" class="step active">
-                <i class="rocket icon"></i>
-                <div class="content">
-                    <div class="title">Alat &amp; Bahan</div>
-                </div>
-            </a>
-            <a href="challenge-4.html" class="step disabled">
-                <i class="tasks icon"></i>
-                <div class="content">
-                    <div class="title">Langkah-langkah</div>
-                </div>
-            </a>
-            <a href="challenge-5.html" class="step disabled">
-                <i class="flag checkered icon"></i>
-                <div class="content">
-                    <div class="title">Summary</div>
-                </div>
-            </a>
+    <div class="create-page ui centered grid container">
+        <div class="sixteen wide mobile sixteen wide tablet fourteen wide computer column center aligned">
+            <h1><i class="trophy icon"></i> CHALLENGE</h1>
+            <div class="ui tiny steps">
+                <a href="challenge-1.html" class="step completed">
+                    <i class="write icon"></i>
+                    <div class="content">
+                        <div class="title">Nama Project</div>
+                    </div>
+                </a>
+                <a href="challenge-2.html" class="step completed">
+                    <i class="newspaper icon"></i>
+                    <div class="content">
+                        <div class="title">Detail Project</div>
+                    </div>
+                </a>
+                <a href="challenge-3.html" class="step active">
+                    <i class="rocket icon"></i>
+                    <div class="content">
+                        <div class="title">Alat &amp; Bahan</div>
+                    </div>
+                </a>
+                <a href="challenge-4.html" class="step disabled">
+                    <i class="tasks icon"></i>
+                    <div class="content">
+                        <div class="title">Langkah-langkah</div>
+                    </div>
+                </a>
+                <a href="challenge-5.html" class="step disabled">
+                    <i class="flag checkered icon"></i>
+                    <div class="content">
+                        <div class="title">Summary</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="sixteen wide mobile sixteen wide tablet twelve wide computer column center aligned">
+            <h2 class="title">Alat &amp; Bahan</h2>
+            <div class="row">
+                <form action="#" class="ui form">
+                    <div class="inline fields">
+                        <div class="four wide field">
+                            Hardware
+                        </div>
+                        <div class="twelve wide field">
+                            <select name="hardware" id="hardware" class="multiple search normal selection dropdown"
+                                    multiple>
+                                <option value="">Select Your Hardware</option>
+                                <option value="0">Raspberry Pi</option>
+                                <option value="1">Banana Pi</option>
+                                <option value="2">Beagle Bone</option>
+                                <option value="3">Intel Gallileo</option>
+                                <option value="4">Intel Genuino</option>
+                                <option value="5">Arduino</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="inline fields">
+                        <div class="four wide field">
+                            Software
+                        </div>
+                        <div class="twelve wide field">
+                            <select name="hardware" id="software" class="multiple search normal selection dropdown"
+                                    multiple>
+                                <option value="">Select Your Software</option>
+                                <option value="0">Raspbian</option>
+                                <option value="1">Arduino SDK</option>
+                                <option value="2">Intel XDK</option>
+                                <option value="3">Android SDK</option>
+                                <option value="4">Unity</option>
+                                <option value="5">OpenGL SDK</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="sixteen wide field center aligned">
+                        <a href="challenge-2.html" class="ui button red">KEMBALI</a>
+                        <a href="challenge-4.html" class="ui button blue">LANJUTKAN</a>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
-    <div class="twelve wide column center aligned">
-        <h2 class="title">Alat &amp; Bahan</h2>
-        <div class="row">
-            <form action="#" class="ui form">
-                <div class="inline fields">
-                    <div class="four wide field">
-                        Hardware
-                    </div>
-                    <div class="twelve wide field">
-                        <select name="hardware" id="hardware" class="multiple search normal selection dropdown" multiple>
-                            <option value="">Select Your Hardware</option>
-                            <option value="0">Raspberry Pi</option>
-                            <option value="1">Banana Pi</option>
-                            <option value="2">Beagle Bone</option>
-                            <option value="3">Intel Gallileo</option>
-                            <option value="4">Intel Genuino</option>
-                            <option value="5">Arduino</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="inline fields">
-                    <div class="four wide field">
-                        Software
-                    </div>
-                    <div class="twelve wide field">
-                        <select name="hardware" id="software" class="multiple search normal selection dropdown" multiple>
-                            <option value="">Select Your Software</option>
-                            <option value="0">Raspbian</option>
-                            <option value="1">Arduino SDK</option>
-                            <option value="2">Intel XDK</option>
-                            <option value="3">Android SDK</option>
-                            <option value="4">Unity</option>
-                            <option value="5">OpenGL SDK</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="sixteen wide field center aligned">
-                    <a href="challenge-2.html" class="ui button red">KEMBALI</a>
-                    <a href="challenge-4.html" class="ui button blue">LANJUTKAN</a>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
 
-<footer class="jumbotron">
-    <div class="ui grid container">
-        <div class="sixteen wide column">
-            <a href="#" class="circular ui icon button">
-                <i class="icon youtube play"></i>
-            </a>
-            <a href="#" class="circular ui icon button">
-                <i class="icon facebook f"></i>
-            </a>
-            <a href="#" class="circular ui icon button">
-                <i class="icon twitter"></i>
-            </a>
-            <a href="#" class="circular ui icon button">
-                <i class="icon instagram"></i>
-            </a>
+    <footer class="jumbotron">
+        <div class="ui grid container">
+            <div class="sixteen wide column">
+                <a href="#" class="circular ui icon button">
+                    <i class="icon youtube play"></i>
+                </a>
+                <a href="#" class="circular ui icon button">
+                    <i class="icon facebook f"></i>
+                </a>
+                <a href="#" class="circular ui icon button">
+                    <i class="icon twitter"></i>
+                </a>
+                <a href="#" class="circular ui icon button">
+                    <i class="icon instagram"></i>
+                </a>
+            </div>
+            <div class="sixteen wide column">
+                <a href="#">Kebijakan Privacy</a> -
+                <a href="#">FAQ</a> -
+                <a href="#">Cara Kerja</a>
+            </div>
+            <div class="sixteen wide column">
+                &copy; 2016 <a href="#" class="brand">dirakit.com</a>. All rights reserved
+            </div>
         </div>
-        <div class="sixteen wide column">
-            <a href="#">Kebijakan Privacy</a> -
-            <a href="#">FAQ</a> -
-            <a href="#">Cara Kerja</a>
-        </div>
-        <div class="sixteen wide column">
-            &copy; 2016 <a href="#" class="brand">dirakit.com</a>. All rights reserved
-        </div>
-    </div>
-</footer>
+    </footer>
+</div>
 <script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="semantic/dist/semantic.min.js"></script>
 <script type="text/javascript" src="assets/js/script.js"></script>

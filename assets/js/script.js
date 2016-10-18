@@ -7,5 +7,9 @@ $(document).ready(function () {
     $('.ui.small.images > .image').click(function () {
         $('.ui.modal').modal('show');
     });
+    $('.ui.sticky').sticky();
+    $('.slider.control').click(function () {
+        $('.ui.sidebar.inverted.vertical.menu').sidebar('toggle');
+    });
     /* End of Semantic UI Initialization */
 });

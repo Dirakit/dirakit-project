@@ -10,9 +10,10 @@
   }
 }
 
-.jumbotron, .cover {
-  min-height: 90%;
+header.jumbotron, .cover {
+  min-height: 60vh;
   padding: 10rem 0;
+  position: relative;
   color: white;
 }
 
@@ -50,7 +51,7 @@ header.jumbotron, .overview.cover {
   background-size: cover;
 }
 
-.header.item {
+.computer.only .header.item {
   width: 140px;
   margin: 0px 40px 0px 0px !important;
   padding: 0px !important;
@@ -64,7 +65,7 @@ header.jumbotron, .overview.cover {
   background: none;
 }
 
-footer.jumbotron {
+div > footer.jumbotron {
   min-height: 244px;
   background-color: #444444;
   background-image: url('../images/dirakit-logo-bottom.png');
@@ -72,14 +73,14 @@ footer.jumbotron {
   background-position: left;
 }
 
-footer.jumbotron > div.container {
+div > footer.jumbotron > div.container {
   position: relative;
   top: 50px;
   bottom: 50px;
 }
 
 .jumbotron > .content {
-  bottom: 40%;
+  bottom: 45%;
   text-align: center;
   position: absolute;
 }
@@ -102,8 +103,13 @@ footer.jumbotron > div.container {
   color: #fff !important;
 }
 
-.ui.menu {
-  margin: 1rem 0 !important;
+.computer.only > .ui.menu {
+  margin-top: -0.5rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.tablet.only > .ui.menu {
+  margin: 1.5rem 0;
 }
 
 article {
@@ -125,11 +131,11 @@ footer {
 }
 
 .profile .content p {
-  margin:0;
+  margin: 0;
 }
 
 .jumbotron.profile .content img.bordered {
-  border: 10px solid rgba(255,255,255,1);
+  border: 10px solid rgba(255, 255, 255, 1);
 }
 
 .jumbotron.profile .content h2, .profile .content .title {
@@ -160,7 +166,7 @@ article.profile {
   margin: 20px 0;
 }
 
-.ui.form .inline.field>.selection.dropdown, .ui.form .inline.fields .field>.selection.dropdown {
+.ui.form .inline.field > .selection.dropdown, .ui.form .inline.fields .field > .selection.dropdown {
   width: 100% !important;
 }
 
@@ -180,7 +186,7 @@ article.profile {
   margin: 1rem 0;
 }
 
-.overview .ui.statistics .statistic > .value , .overview .ui.statistics .statistic > .label {
+.overview .ui.statistics .statistic > .value, .overview .ui.statistics .statistic > .label {
   color: white !important;
 }
 
@@ -192,6 +198,11 @@ article.profile {
   margin-bottom: 8px;
 }
 
-footer.jumbotron {
+div > footer.jumbotron {
   padding: 0 0;
+}
+
+.ui.grid.tablet.mobile.only > *{
+  padding-left: 0;
+  padding-right: 0;
 }

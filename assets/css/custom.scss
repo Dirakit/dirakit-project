@@ -219,3 +219,7 @@ div > footer.jumbotron {
     flex: 0 auto;
   }
 }
+
+.ui.statistic>.value, .ui.statistics .statistic>.value {
+  font-size:2.5rem !important;
+}

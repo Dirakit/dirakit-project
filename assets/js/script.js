@@ -7,9 +7,7 @@ $(document).ready(function () {
     $('.ui.small.images > .image').click(function () {
         $('.ui.modal').modal('show');
     });
-    $('.ui.sticky').sticky({
-        context: 'footer'
-    });
+
     $('.slider.control').click(function () {
         $('.ui.sidebar.inverted.vertical.menu').sidebar('toggle');
     });
@@ -19,8 +17,6 @@ $(document).ready(function () {
         duration: 1000
     });
     /* End of Semantic UI Initialization */
-
-    addStep();
 });
 
 $('.add-step').click(function () {

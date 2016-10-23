@@ -7,7 +7,9 @@ $(document).ready(function () {
     $('.ui.small.images > .image').click(function () {
         $('.ui.modal').modal('show');
     });
-    $('.ui.sticky').sticky();
+    $('.ui.sticky').sticky({
+        context: 'footer'
+    });
     $('.slider.control').click(function () {
         $('.ui.sidebar.inverted.vertical.menu').sidebar('toggle');
     });
@@ -24,7 +26,6 @@ $(document).ready(function () {
 $('.add-step').click(function () {
     addStep();
 });
-
 
 var counter = 1;
 function addStep() {

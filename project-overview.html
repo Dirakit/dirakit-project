@@ -213,14 +213,14 @@
                         officia omnis quibusdam quidem quod. Adipisci aperiam eum fugiat illo nulla officia quam quasi
                         vitae?</p>
                     <h3>Source Code</h3>
-                    <pre>/* Load JS on document ready */
+                    <pre><code class="js">/* Load JS on document ready */
 $(document).ready(function () {
     /* Semantic UI Initialization */
     $('.tabbing.menu .item').tab();
     $('.special.card .image').dimmer({on: 'hover'});
     $('select.dropdown').dropdown({forceSelection:false});
     /* End of Semantic UI Initialization */
-});
+});</code>
             </pre>
                 </div>
 
@@ -353,10 +353,12 @@ $(document).ready(function () {
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/languages/go.min.js"></script>
 <script type="text/javascript" src="assets/js/script.js"></script>
 <script>
-    $('.ui.sticky').sticky({
-        context: 'footer'
+    $(document).ready(function () {
+        $('.ui.sticky').sticky({
+            context: 'footer'
+        });
+        hljs.initHighlightingOnLoad();
     });
-    hljs.initHighlightingOnLoad();
 </script>
 </body>
 </html>

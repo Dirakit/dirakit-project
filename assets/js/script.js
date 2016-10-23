@@ -17,14 +17,45 @@ $(document).ready(function () {
         duration: 1000
     });
     /* End of Semantic UI Initialization */
-    $('.add-step').click(function () {
-        addStep();
-    });
+
+    addStep();
 });
 
+$('.add-step').click(function () {
+    addStep();
+});
+
+
+var counter = 1;
 function addStep() {
     var stepHtml = $('.custom-step');
+    var steps = "<div class='step-" + counter + "'>" +
+        "<div class='inline fields'>" +
+        "<div class='four wide field'>" +
+        "Intro" +
+        "</div>" +
+        "<div class='eight wide field'>" +
+        "<input type='text' placeholder='Judul Intro'>" +
+        "</div>" +
+        "<div class='four wide field'>" +
+        "<button class='ui button fluid'><i class='upload icon'></i>Upload Gambar</button>" +
+        "</div>" +
+        "</div>" +
+        "<div class='inline fields'>" +
+        "<div class='four wide field'>" +
+        "Langkah &nbsp; <span class='step-counter'>" + counter + "</span>" +
+        "</div>" +
+        "<div class='eight wide field'>" +
+        "<textarea name='step' id='step'></textarea>" +
+        "</div>" +
+        "<div class='four wide field'>" +
+        "<button class='ui button fluid'><i class='upload icon'></i>Upload Gambar</button>" +
+        "</div>" +
+        "</div>" +
+        "</div>";
+    counter++;
+
     var step = stepHtml.html();
-    step = step += step;
+    step = step += steps;
     stepHtml.html(step);
 }

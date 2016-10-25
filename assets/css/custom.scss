@@ -103,13 +103,16 @@ div > footer.jumbotron > div.container {
   color: #fff !important;
 }
 
-.computer.only > .ui.menu {
-  margin-top: -0.5rem !important;
-  margin-bottom: 1.5rem !important;
+.ui.top.fixed.menu {
+  background-color: white;
 }
 
-.tablet.only > .ui.menu {
-  margin: 1.5rem 0;
+.ui.top.fixed.menu {
+  padding: 1.5rem 0 !important;
+}
+
+.tablet.only > .ui.top.fixed.menu {
+  margin-top: -0.5rem !important;
 }
 
 article {

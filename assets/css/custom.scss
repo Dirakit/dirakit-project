@@ -63,6 +63,9 @@ header.jumbotron, .overview.cover {
 
 .jumbotron.subtitle {
   background: none;
+  & {
+    font-size: 3.2em;
+  }
 }
 
 div > footer.jumbotron {
@@ -81,8 +84,10 @@ div > footer.jumbotron > div.container {
 
 .jumbotron > .content {
   bottom: 45%;
-  text-align: center;
-  position: absolute;
+  & {
+    text-align: center;
+    position: absolute;
+  }
 }
 
 .jumbotron.profile > .content {
@@ -205,29 +210,13 @@ div > footer.jumbotron {
   padding: 0 0;
 }
 
-.ui.grid.tablet.mobile.only > *{
+.ui.grid.tablet.mobile.only > * {
   padding-left: 0;
   padding-right: 0;
 }
 
-@media only screen and (max-width: 991px) {
-  ul.responsive.meta > li {
-    float: left;
-    margin: 0 10px;
-  }
-  .ui.rail {
-    display:none;
-  }
-}
-
-@media only screen and (max-width: 991px) and (min-width: 768px){
-  .ui.steps .step {
-    flex: 0 auto;
-  }
-}
-
-.ui.statistic>.value, .ui.statistics .statistic>.value {
-  font-size:2.5rem !important;
+.ui.statistic > .value, .ui.statistics .statistic > .value {
+  font-size: 2.5rem !important;
 }
 
 .ui.sticky.fixed {
@@ -236,4 +225,7 @@ div > footer.jumbotron {
 
 // Import prism
 
+@import "tabletonly";
+@import "mobile";
+@import "mobileandtablet";
 @import "prism";

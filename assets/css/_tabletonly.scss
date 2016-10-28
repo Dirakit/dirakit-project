@@ -1,0 +1,10 @@
+
+@media only screen and (max-width: 991px) and (min-width: 768px){
+  .ui.steps .step {
+    flex: 0 auto;
+  }
+
+  .jumbotron>.content {
+    bottom: 35%;
+  }
+}

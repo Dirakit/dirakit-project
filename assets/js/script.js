@@ -16,6 +16,19 @@ $(document).ready(function () {
         transition: 'fade in',
         duration: 1000
     });
+
+    $('.ui.stackable.four.column.grid.container')
+        .visibility({
+            once: false,
+            // update size when new content loads
+            observeChanges: true,
+            // load content on bottom edge visible
+            onBottomVisible: function () {
+                // loads a max of 5 times
+                window.loadFakeContent();
+            }
+        })
+    ;
     /* End of Semantic UI Initialization */
 });
 
@@ -55,4 +68,116 @@ function addStep() {
     var step = stepHtml.html();
     step = step += steps;
     stepHtml.html(step);
+}
+var infiniteContents = '<div class="column">'+
+    '<div class="ui fluid special card">'+
+    '<div class="blurring dimmable image">'+
+    '<div class="ui dimmer">'+
+    '<div class="content">'+
+    '<a class="center" href="#">'+
+    'Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam consequuntur, cum dolor est ipsa ipsam ipsum labore mollitia neque nihil nisi numquam odio officiis placeat sed ut? Quas, reiciendis!'+
+'</a>'+
+'</div>'+
+'</div>'+
+'<img src="assets/images/13.png" alt="13">'+
+    '</div>'+
+    '<div class="content">'+
+    '<a href="#" class="header">Lorem Ipsum</a>'+
+'<div class="meta">'+
+    '<a href="#"><i class="folder icon"></i>Showcase</a>'+
+    '<a href="#"><i class="user icon"></i>Admin</a>'+
+    '<a href="#"><i class="unhide icon"></i>2200</a>'+
+    '</div>'+
+    '</div>'+
+    '</div>'+
+    '</div>'+
+    '<div class="column">'+
+    '<div class="ui fluid special card">'+
+    '<div class="blurring dimmable image">'+
+    '<div class="ui dimmer">'+
+    '<div class="content">'+
+    '<a class="center" href="#">'+
+    'Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam consequuntur, cum dolor est ipsa ipsam ipsum labore mollitia neque nihil nisi numquam odio officiis placeat sed ut? Quas, reiciendis!'+
+'</a>'+
+'</div>'+
+'</div>'+
+'<img src="assets/images/13.png" alt="13">'+
+    '</div>'+
+    '<div class="content">'+
+    '<a href="#" class="header">Lorem Ipsum</a>'+
+'<div class="meta">'+
+    '<a href="#"><i class="folder icon"></i>Showcase</a>'+
+    '<a href="#"><i class="user icon"></i>Admin</a>'+
+    '<a href="#"><i class="unhide icon"></i>2200</a>'+
+    '</div>'+
+    '</div>'+
+    '</div>'+
+    '</div>'+
+    '<div class="column">'+
+    '<div class="ui fluid special card">'+
+    '<div class="blurring dimmable image">'+
+    '<div class="ui dimmer">'+
+    '<div class="content">'+
+    '<a class="center" href="#">'+
+    'Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam consequuntur, cum dolor est ipsa ipsam ipsum labore mollitia neque nihil nisi numquam odio officiis placeat sed ut? Quas, reiciendis!'+
+'</a>'+
+'</div>'+
+'</div>'+
+'<img src="assets/images/13.png" alt="13">'+
+    '</div>'+
+    '<div class="content">'+
+    '<a href="#" class="header">Lorem Ipsum</a>'+
+'<div class="meta">'+
+    '<a href="#"><i class="folder icon"></i>Showcase</a>'+
+    '<a href="#"><i class="user icon"></i>Admin</a>'+
+    '<a href="#"><i class="unhide icon"></i>2200</a>'+
+    '</div>'+
+    '</div>'+
+    '</div>'+
+    '</div>'+
+    '<div class="column">'+
+    '<div class="ui fluid special card">'+
+    '<div class="blurring dimmable image">'+
+    '<div class="ui dimmer">'+
+    '<div class="content">'+
+    '<a class="center" href="#">'+
+    'Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam consequuntur, cum dolor est ipsa ipsam ipsum labore mollitia neque nihil nisi numquam odio officiis placeat sed ut? Quas, reiciendis!'+
+'</a>'+
+'</div>'+
+'</div>'+
+'<img src="assets/images/13.png" alt="13">'+
+    '</div>'+
+    '<div class="content">'+
+    '<a href="#" class="header">Lorem Ipsum</a>'+
+'<div class="meta">'+
+    '<a href="#"><i class="folder icon"></i>Showcase</a>'+
+    '<a href="#"><i class="user icon"></i>Admin</a>'+
+    '<a href="#"><i class="unhide icon"></i>2200</a>'+
+    '</div>'+
+    '</div>'+
+    '</div>'+
+    '</div>';
+var count = 1;
+window.loadFakeContent = function () {
+    // load fake content
+    var
+        $segment = $('.ui.stackable.four.column.grid.container'),
+        $loader = $segment.find('.inline.loader'),
+        $content = infiniteContents;
+    if (count <= 5) {
+        $loader.addClass('active');
+        setTimeout(function () {
+            $loader
+                .removeClass('active')
+                .before($content)
+            ;
+            $('.ui.sticky')
+                .sticky('refresh')
+            ;
+            $('.visibility.example > .overlay, .visibility.example > .demo.segment, .visibility.example .items img')
+                .visibility('refresh')
+            ;
+        }, 1000);
+    }
+    count++;
 }

@@ -69,7 +69,8 @@ header.jumbotron, .overview.cover {
 }
 
 div > footer.jumbotron {
-  min-height: 244px;
+  min-height: 183px;
+  background-size: contain;
   background-color: #444444;
   background-image: url('../images/dirakit-logo-bottom.png');
   background-repeat: no-repeat;
@@ -78,8 +79,8 @@ div > footer.jumbotron {
 
 div > footer.jumbotron > div.container {
   position: relative;
-  top: 50px;
-  bottom: 50px;
+  top: 20px;
+  bottom: 20px;
 }
 
 .jumbotron > .content {

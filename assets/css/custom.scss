@@ -22,10 +22,12 @@ header.jumbotron, .cover {
 }
 
 .half.jumbotron {
-  min-height: 300px;
+  margin-top: 56px;
+  min-height: 191px;
+  padding: 50px 0;
   .content {
     background: none;
-    top: 150px !important;
+    //top: 150px !important;
     display: block;
     width: 100%;
     h2 {
@@ -225,6 +227,10 @@ div > footer.jumbotron {
   margin-top: 5rem !important;
 }
 
+.ui.button.in:hover {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #00b8ed;
+}
 // Import prism
 
 @import "tabletonly";

@@ -242,6 +242,15 @@ div > footer.jumbotron {
   padding-left: 20px !important;
   padding-right: 20px !important;
 }
+
+.ui.card .content a.header {
+  max-width: 100%;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 // Import prism
 
 @import "tabletonly";

@@ -29,6 +29,10 @@ $(document).ready(function () {
             }
         })
     ;
+
+    $('.ui.card .content a.header').popup({
+        variation: 'very wide'
+    });
     /* End of Semantic UI Initialization */
 });
 

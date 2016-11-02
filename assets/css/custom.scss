@@ -231,6 +231,17 @@ div > footer.jumbotron {
   color: rgba(255, 255, 255, 0.8);
   background-color: #00b8ed;
 }
+
+.ui.secondary.pointing.menu {
+  border-bottom: none !important;
+}
+
+.ui.item.secondary.pointing.tabbing.menu > .item {
+  text-transform: uppercase;
+  width: auto;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
 // Import prism
 
 @import "tabletonly";

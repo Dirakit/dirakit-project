@@ -141,7 +141,7 @@ div > footer.jumbotron > div.container {
 
 article {
   background-color: #F2F2F2;
-  padding: 10rem 0;
+  padding: 7rem 0 10rem;
 }
 
 footer {
@@ -250,6 +250,7 @@ div > footer.jumbotron {
 
 .ui.secondary.pointing.menu {
   border-bottom: none !important;
+  margin-bottom: 3rem;
 }
 
 .ui.item.secondary.pointing.tabbing.menu > .item {

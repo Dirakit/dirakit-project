@@ -251,6 +251,22 @@ div > footer.jumbotron {
   white-space: nowrap;
 }
 
+.ui.card > .image {
+  height: 188px;
+  overflow: hidden;
+  vertical-align: middle;
+  text-align: center;
+  justify-content: center;
+  display: flex !important;
+  background: white !important;
+  img {
+    height: inherit !important;
+    width: auto !important;
+    vertical-align: middle;
+    position: absolute;
+  }
+}
+
 // Import prism
 
 @import "tabletonly";

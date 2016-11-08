@@ -279,6 +279,10 @@ div > footer.jumbotron {
   }
 }
 
+article.platform .card .content {
+  text-align: center;
+}
+
 // Import prism
 
 @import "tabletonly";

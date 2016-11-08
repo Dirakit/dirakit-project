@@ -42,6 +42,9 @@ header.jumbotron, .cover {
   box-sizing: content-box;
 }
 
+header.jumbotron.home {
+  background-image: url('../images/bg-home.jpg');
+}
 header.jumbotron {
   background-image: url('../images/home3.jpg');
 }

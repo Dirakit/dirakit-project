@@ -17,6 +17,10 @@ header.jumbotron, .cover {
   color: white;
 }
 
+body {
+  margin-top: -20px;
+}
+
 .overview.cover {
   background-image: url('../images/home-smoke.jpg');
 }
@@ -45,6 +49,7 @@ header.jumbotron, .cover {
 header.jumbotron.home {
   background-image: url('../images/bg-home.jpg');
 }
+
 header.jumbotron {
   background-image: url('../images/home3.jpg');
 }
@@ -275,4 +280,5 @@ div > footer.jumbotron {
 @import "tabletonly";
 @import "mobile";
 @import "mobileandtablet";
+@import "desktoponly";
 @import "prism";

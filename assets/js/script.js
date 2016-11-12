@@ -53,10 +53,10 @@ function addStep() {
                 "<input type='text' placeholder='Judul Intro'>" +
             "</div>" +
             "<div class='sixteen wide field'>" +
-                "<button class='ui button fluid'><i class='upload icon'></i>Upload Gambar</button>" +
+                "<input type='file' name='file' class='challenge-step-"+counter+"' multiple/>"+
             "</div>" +
             "<div class='sixteen wide field'>" +
-                "<textarea name='step' id='step-"+counter+"' class='challenge-steps' rows='30'></textarea>" +
+                "<textarea name='step' class='challenge-step-"+counter+"' rows='30'></textarea>" +
             "</div>" +
         "</div>";
 
@@ -64,9 +64,13 @@ function addStep() {
     step = step += steps;
     stepHtml.html(step);
 
-    var textareaId = '#step-' + counter;
-    console.log(textareaId);
-    $(textareaId).froalaEditor();
+    var challengeStep = '.challenge-step-' + counter;
+    var textAreaStep = 'textarea'+ challengeStep;
+    var uploadHolderStep = 'input' + challengeStep;
+    console.log(textAreaStep);
+    console.log(uploadHolderStep);
+    $(uploadHolderStep).dropzone({url: "eassets/images/"});
+    $(textAreaStep).froalaEditor();
     counter++;
 
 }

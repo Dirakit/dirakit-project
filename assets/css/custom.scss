@@ -288,6 +288,10 @@ article.platform .card .content {
   text-align: center;
 }
 
+.challenge-steps-container {
+  margin: 3rem 0;
+}
+
 // Import prism
 
 @import "tabletonly";
@@ -295,3 +299,5 @@ article.platform .card .content {
 @import "mobileandtablet";
 @import "desktoponly";
 @import "prism";
+@import "froala_editor.min";
+@import "froala_style.min";

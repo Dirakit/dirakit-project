@@ -4,7 +4,7 @@ $(document).ready(function () {
     $('.tabbing.menu .item').tab();
     $('.special.card .image').dimmer({on: 'hover'});
     $('select.dropdown').dropdown({forceSelection: false});
-    $('.ui.small.images > .image').click(function () {
+    $('.ui.images > .image').click(function () {
         $('.ui.modal').modal('show');
     });
 

@@ -40,6 +40,9 @@ body {
   }
 }
 
+.jumbotron.profile>.content {
+  bottom: -20% !important;
+}
 .jumbotron {
   width: 100vw;
   background: #1B1C1D;
@@ -172,10 +175,6 @@ footer {
 
 .jumbotron.profile .content h3, .profile .content .subtitle {
   font-size: 1.3rem;
-}
-
-article.profile {
-  margin: 1rem 0 10rem 0;
 }
 
 .challenge .row ul, ul.nolist {

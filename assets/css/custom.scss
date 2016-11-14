@@ -1,3 +1,5 @@
+$body-bg : #F2F2F2;
+
 @keyframes bounce {
   0% {
     bottom: 7%;
@@ -19,6 +21,7 @@ header.jumbotron, .cover {
 
 body {
   margin-top: -20px;
+  background: $body-bg;
 }
 
 .overview.cover {
@@ -143,7 +146,6 @@ div > footer.jumbotron > div.container {
 }
 
 article {
-  background-color: #F2F2F2;
   padding: 7rem 0 10rem;
 }
 
@@ -187,6 +189,7 @@ footer {
 
 .create-page {
   margin: 10rem 0 !important;
+  background: #ffffff;
 }
 
 .create-page .ui.three.column {

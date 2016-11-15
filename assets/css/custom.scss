@@ -280,7 +280,8 @@ div > footer.jumbotron {
   display: flex !important;
   background: white !important;
   img {
-    height: inherit !important;
+    min-height: 100% !important;
+    min-width: 100% !important;
     width: auto !important;
     vertical-align: middle;
     position: absolute;

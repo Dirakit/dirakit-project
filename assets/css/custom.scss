@@ -281,7 +281,7 @@ div > footer.jumbotron {
   background: white !important;
   img {
     min-height: 100% !important;
-    min-width: 100% !important;
+    min-width: inherit !important;
     width: auto !important;
     vertical-align: middle;
     position: absolute;
@@ -301,7 +301,7 @@ article.platform .card .content {
 }
 
 .article-extras {
-  margin: 3rem 0 !important;
+  margin: 2rem 0 !important;
 }
 
 // Import prism

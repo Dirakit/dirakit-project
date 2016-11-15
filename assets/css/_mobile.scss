@@ -6,4 +6,20 @@
   .jumbotron.subtitle {
     font-size: 2.6em;
   }
+  .ui.four.item.pointing.secondary.tabbing.menu {
+    display: inline-block;
+  }
+  .jumbotron.profile {
+    min-height: 60vh !important;
+  }
+
+  .ui.statistics {
+    background: rgba(0,0,0,.8);
+    .statistic {
+      .value {
+        font-size: 2rem !important;
+
+      }
+    }
+  }
 }

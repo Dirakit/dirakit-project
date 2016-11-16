@@ -197,11 +197,54 @@ $('.ui.form')
                     prompt: 'Email tidak boleh kosong'
                 }]
             },
+            name: {
+                identifier: 'name',
+                rules: [
+                    {
+                        type: 'empty',
+                        prompt: 'Nama Lengkap tidak boleh kosong'
+                    },
+                    {
+                        type: 'minLength[2]',
+                        prompt: 'Nama minimal 2 karakter'
+                    }
+                ]
+            },
             password: {
                 identifier: 'password',
+                rules: [
+                    {
+                        type: 'empty',
+                        prompt: 'Password tidak boleh kosong'
+                    },
+                    {
+                        type: 'minLength[8]',
+                        prompt: 'Password minimal 8 karakter'
+                    }
+                ]
+            },
+            confirmPassword: {
+                identifier: 'password-confirmation',
+                rules: [
+                    {
+                        type: 'empty',
+                        prompt: 'Konfirmasi Password tidak boleh kosong'
+                    },
+                    {
+                        type: 'minLength[8]',
+                        prompt: 'Konfirmasi Password minimal 8 karakter'
+                    },
+                    {
+                        type: 'match[password]',
+                        prompt: 'Konfirmasi Password tidak sesuai dengan Password'
+                    }
+                ]
+            },
+            termsAndCondition: {
+                identifier: 'accept-tnc',
                 rules: [{
-                    type: 'minLength[8]',
-                    prompt: 'Password minimal 8 karakter'
+                    type: 'checked',
+                    prompt: 'Anda harus menerima Syarat dan Ketentuan yang berlaku'
                 }]
             }
         }

@@ -61,27 +61,5 @@
 <script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="semantic/dist/semantic.min.js"></script>
 <script type="text/javascript" src="assets/js/script.js"></script>
-<script>
-    $('.ui.form')
-            .form({
-                fields: {
-                    email: {
-                        identifier: 'email',
-                        rules: [{
-                            type: 'empty',
-                            prompt: 'Email tidak boleh kosong'
-                        }]
-                    },
-                    password: {
-                        identifier: 'password',
-                        rules: [{
-                            type: 'minLength[8]',
-                            prompt: 'Password minimal 8 karakter'
-                        }]
-                    }
-                }
-            })
-    ;
-</script>
 </body>
 </html>

@@ -186,3 +186,24 @@ window.loadFakeContent = function () {
     }
     count++;
 };
+
+$('.ui.form')
+    .form({
+        fields: {
+            email: {
+                identifier: 'email',
+                rules: [{
+                    type: 'empty',
+                    prompt: 'Email tidak boleh kosong'
+                }]
+            },
+            password: {
+                identifier: 'password',
+                rules: [{
+                    type: 'minLength[8]',
+                    prompt: 'Password minimal 8 karakter'
+                }]
+            }
+        }
+    })
+;

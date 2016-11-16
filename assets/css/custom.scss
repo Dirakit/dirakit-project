@@ -217,10 +217,6 @@ footer {
   margin: 1rem 0;
 }
 
-.overview .ui.statistics .statistic > .value, .overview .ui.statistics .statistic > .label {
-  color: white;
-}
-
 .ui.comments {
   max-width: 100%;
 }
@@ -288,7 +284,7 @@ div > footer.jumbotron {
   }
 }
 
-article.platform .card .content {
+article.platform .card .content, .center {
   text-align: center;
 }
 
@@ -302,6 +298,19 @@ article.platform .card .content {
 
 .article-extras {
   margin: 2rem 0 !important;
+}
+
+.image-header > img {
+  margin: 0 20%;
+  width: 60%;
+}
+
+.social.buttons {
+  margin: 1rem 0;
+}
+
+.login {
+  height: 100vh;
 }
 
 // Import prism

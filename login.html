@@ -10,21 +10,21 @@
 </head>
 <body>
 <div class="login ui centered grid container middle aligned content">
-    <div class="seven wide column">
+    <div class="sixteen wide mobile ten wide tablet seven wide computer column">
         <div class="ui grid">
             <div class="image-header sixteen wide column">
                 <img src="assets/images/dirakit-logo-xl.png" alt="Dirakit">
             </div>
             <div class="sixteen wide column">
                 <h3 class="center">Login</h3>
-                <form class="ui form">
+                <form class="ui form" method="post" action="#">
                     <div class="field">
                         <label>Email</label>
-                        <input type="text" name="email" placeholder="Your Email">
+                        <input type="text" name="email" placeholder="Your Email" data-validate="email">
                     </div>
                     <div class="field">
                         <label>Password</label>
-                        <input type="password" name="password" placeholder="Your Password">
+                        <input type="password" name="password" placeholder="Your Password" data-validate="password">
                     </div>
                     <div class="field">
                         <div class="ui checkbox">
@@ -32,7 +32,8 @@
                             <label for="remember">Remember Me</label>
                         </div>
                     </div>
-                    <button class="fluid ui primary basic medium button" type="submit">Masuk</button>
+                    <button class="fluid ui primary basic medium submit button" type="submit">Masuk</button>
+                    <div class="ui error message"></div>
                 </form>
             </div>
             <div class="sixteen wide column center">
@@ -60,5 +61,27 @@
 <script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="semantic/dist/semantic.min.js"></script>
 <script type="text/javascript" src="assets/js/script.js"></script>
+<script>
+    $('.ui.form')
+            .form({
+                fields: {
+                    email: {
+                        identifier: 'email',
+                        rules: [{
+                            type: 'empty',
+                            prompt: 'Email tidak boleh kosong'
+                        }]
+                    },
+                    password: {
+                        identifier: 'password',
+                        rules: [{
+                            type: 'minLength[8]',
+                            prompt: 'Password minimal 8 karakter'
+                        }]
+                    }
+                }
+            })
+    ;
+</script>
 </body>
 </html>

@@ -49,15 +49,15 @@ function addStep() {
     var stepHtml = $('.custom-step');
     var steps = "<div class='challenge-steps-container step-" + counter + "'>" +
         "Langkah &nbsp; <span class='step-counter'>" + counter + "</span>" +
-            "<div class='sixteen wide field'>" +
-                "<input type='text' placeholder='Judul Intro'>" +
-            "</div>" +
-            "<div class='sixteen wide field'>" +
-                "<input type='file' name='file' class='challenge-step-"+counter+"' multiple/>"+
-            "</div>" +
-            "<div class='sixteen wide field'>" +
-                "<textarea name='step' class='challenge-step-"+counter+"' rows='30'></textarea>" +
-            "</div>" +
+        "<div class='sixteen wide field'>" +
+        "<input type='text' placeholder='Judul Intro'>" +
+        "</div>" +
+        "<div class='sixteen wide field'>" +
+        "<input type='file' name='file' class='challenge-step-" + counter + "' multiple/>" +
+        "</div>" +
+        "<div class='sixteen wide field'>" +
+        "<textarea name='step' class='challenge-step-" + counter + "' rows='30'></textarea>" +
+        "</div>" +
         "</div>";
 
     var step = stepHtml.html();
@@ -65,7 +65,7 @@ function addStep() {
     stepHtml.html(step);
 
     var challengeStep = '.challenge-step-' + counter;
-    var textAreaStep = 'textarea'+ challengeStep;
+    var textAreaStep = 'textarea' + challengeStep;
     var uploadHolderStep = 'input' + challengeStep;
     console.log(textAreaStep);
     console.log(uploadHolderStep);
@@ -185,4 +185,4 @@ window.loadFakeContent = function () {
         }, 1000);
     }
     count++;
-}
+};

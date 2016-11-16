@@ -15,11 +15,16 @@
 
   .ui.statistics {
     background: rgba(0,0,0,.8);
+    margin-bottom: 1rem;
     .statistic {
       .value {
         font-size: 2rem !important;
 
       }
     }
+  }
+
+  article {
+    padding: 10rem 0 10rem;
   }
 }

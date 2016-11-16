@@ -6,4 +6,13 @@
   .ui.rail {
     display: none;
   }
+  .ui.statistics {
+    background: #E0E0E0;
+    > .statistic {
+      margin: 1.5em 2em !important;
+    }
+  }
+  .overview .ui.statistics .statistic > .value, .overview .ui.statistics .statistic > .label {
+    color: black;
+  }
 }

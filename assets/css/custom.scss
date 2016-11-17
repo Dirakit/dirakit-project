@@ -321,6 +321,10 @@ article.platform .card .content, .center {
   overflow:visible!important;
 }
 
+td .button {
+  margin: 10px 0 !important;
+}
+
 // Import prism
 
 @import "tabletonly";

@@ -309,12 +309,16 @@ article.platform .card .content, .center {
   margin: 1rem 0;
 }
 
-.login, .register {
+.login, .register, .drafts, .dimmed {
   min-height: 100vh;
 }
 
 .drafts {
-  margin-top: 10rem !important;
+  padding-top: 10rem !important;
+}
+
+.sidebar{
+  overflow:visible!important;
 }
 
 // Import prism

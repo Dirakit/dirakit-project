@@ -103,7 +103,7 @@
                             Hardware
                         </div>
                         <div class="twelve wide field">
-                            <select name="hardware" id="hardware" class="multiple search normal selection dropdown"
+                            <select name="hardware" id="hardware" class="ui multiple search normal selection dropdown"
                                     multiple>
                                 <option value="">Select Your Hardware</option>
                                 <option value="0">Raspberry Pi</option>
@@ -120,7 +120,7 @@
                             Software
                         </div>
                         <div class="twelve wide field">
-                            <select name="hardware" id="software" class="multiple search normal selection dropdown"
+                            <select name="hardware" id="software" class="ui multiple search normal selection dropdown"
                                     multiple>
                                 <option value="">Select Your Software</option>
                                 <option value="0">Raspbian</option>
@@ -169,8 +169,51 @@
         </div>
     </footer>
 </div>
+<div class="ui mini modal" id="add-item">
+    <div class="header">Tambah Baru</div>
+    <div class="content">
+        <form action="#" class="ui form">
+            <div class="field">
+                <label for="name">Nama</label>
+                <input type="text" id="name">
+            </div>
+            <div class="field">
+                <label for="category">Category</label>
+                <select name="category" id="category" class="ui dropdown">
+                    <option value="">Pilih Kategory</option>
+                    <option value="hardware">Hardware</option>
+                    <option value="software">Software</option>
+                </select>
+            </div>
+            <div class="field">
+                <label for="image">Gambar</label>
+                <input type="file" class="ui button" id="image" name="image" value="Upload">
+            </div>
+        </form>
+    </div>
+    <div class="actions">
+        <button class="ui cancel red button">Batal</button>
+        <button class="ui approve green button">Tambah</button>
+    </div>
+</div>
 <script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="semantic/dist/semantic.min.js"></script>
 <script type="text/javascript" src="assets/js/script.js"></script>
+<script>
+    $(document).ready(function () {
+        console.log('RUN');
+        $('.ui.multiple.search.dropdown').dropdown({
+            forceSelection: false,
+            message: {
+                noResults: '<a onclick="addItem()">Tambah Baru</a>'
+            }
+        });
+    });
+    function addItem() {
+        $('#add-item').modal('show',{
+            closable: false
+        });
+    }
+</script>
 </body>
 </html>

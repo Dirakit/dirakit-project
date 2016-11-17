@@ -3,7 +3,6 @@ $(document).ready(function () {
     /* Semantic UI Initialization */
     $('.tabbing.menu .item').tab();
     $('.special.card .image').dimmer({on: 'hover'});
-    $('select.dropdown').dropdown({forceSelection: false});
     $('.ui.images > .image').click(function () {
         $('.ui.modal').modal('show');
     });
@@ -55,7 +54,6 @@ function addStep() {
         "<input type='text' placeholder='Judul Intro'>" +
         "</div>" +
         "<div class='sixteen wide field'>" +
-        "<input type='file' name='file' class='challenge-step-" + counter + "' multiple/>" +
         "</div>" +
         "<div class='sixteen wide field'>" +
         "<textarea name='step' class='challenge-step-" + counter + "' rows='30'></textarea>" +

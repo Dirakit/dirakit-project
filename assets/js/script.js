@@ -17,6 +17,8 @@ $(document).ready(function () {
         duration: 1000
     });
 
+    $('.ui.dropdown').dropdown();
+
     $('.ui.stackable.four.column.grid.container')
         .visibility({
             once: false,

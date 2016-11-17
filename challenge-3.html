@@ -103,16 +103,37 @@
                             Hardware
                         </div>
                         <div class="twelve wide field">
-                            <select name="hardware" id="hardware" class="ui multiple search normal selection dropdown"
-                                    multiple>
-                                <option value="">Select Your Hardware</option>
-                                <option value="0">Raspberry Pi</option>
-                                <option value="1">Banana Pi</option>
-                                <option value="2">Beagle Bone</option>
-                                <option value="3">Intel Gallileo</option>
-                                <option value="4">Intel Genuino</option>
-                                <option value="5">Arduino</option>
-                            </select>
+                            <div id="hardware" class="ui fluid multiple search normal selection dropdown">
+                                <input type="hidden" name="country">
+                                <i class="dropdown icon"></i>
+                                <div class="default text">Select Your Hardware</div>
+                                <div class="menu">
+                                    <div data-value="0" class="item">
+                                        <img src="assets/images/arduino-logo.png" alt="logo" class="ui image">
+                                        Raspberry Pi
+                                    </div>
+                                    <div data-value="1" class="item">
+                                        <img src="assets/images/arduino-logo.png" alt="logo" class="ui image">
+                                        Banana Pi
+                                    </div>
+                                    <div data-value="2" class="item">
+                                        <img src="assets/images/arduino-logo.png" alt="logo" class="ui image">
+                                        Beagle Bone
+                                    </div>
+                                    <div data-value="3" class="item">
+                                        <img src="assets/images/arduino-logo.png" alt="logo" class="ui image">
+                                        Intel Gallileo
+                                    </div>
+                                    <div data-value="4" class="item">
+                                        <img src="assets/images/arduino-logo.png" alt="logo" class="ui image">
+                                        Intel Genuino
+                                    </div>
+                                    <div data-value="5" class="item">
+                                        <img src="assets/images/arduino-logo.png" alt="logo" class="ui image">
+                                        Arduino
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="inline fields">
@@ -120,16 +141,37 @@
                             Software
                         </div>
                         <div class="twelve wide field">
-                            <select name="hardware" id="software" class="ui multiple search normal selection dropdown"
-                                    multiple>
-                                <option value="">Select Your Software</option>
-                                <option value="0">Raspbian</option>
-                                <option value="1">Arduino SDK</option>
-                                <option value="2">Intel XDK</option>
-                                <option value="3">Android SDK</option>
-                                <option value="4">Unity</option>
-                                <option value="5">OpenGL SDK</option>
-                            </select>
+                            <div id="software" class="ui fluid multiple search normal selection dropdown">
+                                <input type="hidden" name="country">
+                                <i class="dropdown icon"></i>
+                                <div class="default text">Select Your Software</div>
+                                <div class="menu">
+                                    <div data-value="0" class="item">
+                                        <img src="assets/images/arduino-logo.png" alt="logo" class="ui image">
+                                        Raspberry Pi
+                                    </div>
+                                    <div data-value="1" class="item">
+                                        <img src="assets/images/arduino-logo.png" alt="logo" class="ui image">
+                                        Banana Pi
+                                    </div>
+                                    <div data-value="2" class="item">
+                                        <img src="assets/images/arduino-logo.png" alt="logo" class="ui image">
+                                        Beagle Bone
+                                    </div>
+                                    <div data-value="3" class="item">
+                                        <img src="assets/images/arduino-logo.png" alt="logo" class="ui image">
+                                        Intel Gallileo
+                                    </div>
+                                    <div data-value="4" class="item">
+                                        <img src="assets/images/arduino-logo.png" alt="logo" class="ui image">
+                                        Intel Genuino
+                                    </div>
+                                    <div data-value="5" class="item">
+                                        <img src="assets/images/arduino-logo.png" alt="logo" class="ui image">
+                                        Arduino
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="sixteen wide field center aligned">
@@ -201,7 +243,6 @@
 <script type="text/javascript" src="assets/js/script.js"></script>
 <script>
     $(document).ready(function () {
-        console.log('RUN');
         $('.ui.multiple.search.dropdown').dropdown({
             forceSelection: false,
             message: {
@@ -210,7 +251,7 @@
         });
     });
     function addItem() {
-        $('#add-item').modal('show',{
+        $('#add-item').modal('show', {
             closable: false
         });
     }

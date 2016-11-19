@@ -129,11 +129,11 @@
                     <div class="ui sticky right-bar">
                         <h2 class="title">Membuat Jam Digital dengan Arduino dan LED 16x2</h2>
                         <div class="ui list">
-                            <div class="item"><a href="#">Intro</a></div>
-                            <div class="item"><a href="#">Langkah-langkah</a></div>
-                            <div class="item"><a href="#">Finishing</a></div>
-                            <div class="item"><a href="#">Source Code</a></div>
-                            <div class="item"><a href="#">Komentar</a></div>
+                            <div class="item" id="nav-intro"><a href="#">Intro</a></div>
+                            <div class="item" id="nav-steps"><a href="#">Langkah-langkah</a></div>
+                            <div class="item" id="nav-finishing"><a href="#">Finishing</a></div>
+                            <div class="item" id="nav-source-code"><a href="#">Source Code</a></div>
+                            <div class="item" id="nav-comments"><a href="#">Komentar</a></div>
                         </div>
                     </div>
                 </div>
@@ -151,69 +151,82 @@
                             </div>
                         </div>
                     </div>
-                    <h3>Intro</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste non odio quas rerum voluptatem!
-                        Adipisci
-                        autem deleniti, dolore doloremque dolorum eaque enim labore laboriosam natus nulla vero
-                        voluptates!
-                        Dolores, repellendus.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, ducimus hic iste natus nemo
-                        nesciunt
-                        nisi
-                        odio, porro possimus praesentium quo sequi, voluptas voluptatem. Accusamus blanditiis iure quae
-                        quisquam
-                        rerum?</p>
-                    <blockquote>Design is not just what it looks like and feels like. Design is how it works.
-                    </blockquote>
-                    <h3>Langkah-langkah</h3>
-                    <div class="mosaic-container">
-                        <img src="assets/images/home-smoke.jpg" class="mosaic-item" alt="Langkah 1">
-                        <img src="assets/images/home-smoke.jpg" class="mosaic-item" alt="Langkah 2">
-                        <img src="assets/images/home-smoke.jpg" class="mosaic-item" alt="Langkah 3">
-                        <img src="assets/images/home-smoke.jpg" class="mosaic-item" alt="Langkah 4">
-                        <img src="assets/images/home-smoke.jpg" class="mosaic-item" alt="Langkah 5">
-                        <img src="assets/images/home-smoke.jpg" class="mosaic-item" alt="Langkah 6">
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam animi dignissimos doloribus
-                        dolorum
-                        ducimus earum excepturi id impedit, inventore maxime modi molestiae nam nemo nesciunt numquam,
-                        perspiciatis quia quisquam unde.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid animi architecto assumenda
-                        atque
-                        autem dicta est hic libero magnam magni nisi officia possimus quia repellat similique, totam
-                        velit
-                        vitae.</p>
-                    <ol>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum doloribus explicabo illum
-                            incidunt
-                            inventore laudantium, magnam maxime molestiae perspiciatis provident quaerat qui quos
-                            reiciendis
-                            sit
-                            soluta tempora velit vitae voluptas.
-                        </li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias explicabo fuga fugiat
-                            iusto
-                            laborum magni nulla numquam officiis omnis quod ratione, sapiente vero! Enim expedita
-                            maiores
-                            nam
-                            quisquam quod!
-                        </li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, atque cum, dolore
+                    <section class="scrollspy" data-target="#nav-intro">
+                        <h3>Intro</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste non odio quas rerum
+                            voluptatem!
+                            Adipisci
+                            autem deleniti, dolore doloremque dolorum eaque enim labore laboriosam natus nulla vero
+                            voluptates!
+                            Dolores, repellendus.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, ducimus hic iste natus nemo
+                            nesciunt
+                            nisi
+                            odio, porro possimus praesentium quo sequi, voluptas voluptatem. Accusamus blanditiis iure
+                            quae
+                            quisquam
+                            rerum?</p>
+                        <blockquote>Design is not just what it looks like and feels like. Design is how it works.
+                        </blockquote>
+                    </section>
+                    <section class="scrollspy" data-target="#nav-steps">
+                        <h3>Langkah-langkah</h3>
+                        <div class="mosaic-container">
+                            <img src="assets/images/home-smoke.jpg" class="mosaic-item" alt="Langkah 1">
+                            <img src="assets/images/home-smoke.jpg" class="mosaic-item" alt="Langkah 2">
+                            <img src="assets/images/home-smoke.jpg" class="mosaic-item" alt="Langkah 3">
+                            <img src="assets/images/home-smoke.jpg" class="mosaic-item" alt="Langkah 4">
+                            <img src="assets/images/home-smoke.jpg" class="mosaic-item" alt="Langkah 5">
+                            <img src="assets/images/home-smoke.jpg" class="mosaic-item" alt="Langkah 6">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam animi dignissimos doloribus
                             dolorum
-                            enim
-                            magni necessitatibus nemo quaerat sapiente sit tenetur ullam veritatis voluptas. Ab
-                            consequatur
-                            odio
-                            reprehenderit saepe totam!
-                        </li>
-                    </ol>
-                    <h3>Finishing</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam culpa deleniti et ipsum iure
-                        maxime
-                        officia omnis quibusdam quidem quod. Adipisci aperiam eum fugiat illo nulla officia quam quasi
-                        vitae?</p>
-                    <h3>Source Code</h3>
-                    <pre><code class="language-js line-numbers">/* Load JS on document ready */
+                            ducimus earum excepturi id impedit, inventore maxime modi molestiae nam nemo nesciunt
+                            numquam,
+                            perspiciatis quia quisquam unde.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid animi architecto
+                            assumenda
+                            atque
+                            autem dicta est hic libero magnam magni nisi officia possimus quia repellat similique, totam
+                            velit
+                            vitae.</p>
+                        <ol>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum doloribus explicabo illum
+                                incidunt
+                                inventore laudantium, magnam maxime molestiae perspiciatis provident quaerat qui quos
+                                reiciendis
+                                sit
+                                soluta tempora velit vitae voluptas.
+                            </li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias explicabo fuga fugiat
+                                iusto
+                                laborum magni nulla numquam officiis omnis quod ratione, sapiente vero! Enim expedita
+                                maiores
+                                nam
+                                quisquam quod!
+                            </li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, atque cum, dolore
+                                dolorum
+                                enim
+                                magni necessitatibus nemo quaerat sapiente sit tenetur ullam veritatis voluptas. Ab
+                                consequatur
+                                odio
+                                reprehenderit saepe totam!
+                            </li>
+                        </ol>
+                    </section>
+                    <section class="scrollspy" data-target="#nav-finishing">
+                        <h3>Finishing</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam culpa deleniti et ipsum
+                            iure
+                            maxime
+                            officia omnis quibusdam quidem quod. Adipisci aperiam eum fugiat illo nulla officia quam
+                            quasi
+                            vitae?</p>
+                    </section>
+                    <section class="scrollspy" data-target="#nav-source-code">
+                        <h3>Source Code</h3>
+                        <pre><code class="language-js line-numbers">/* Load JS on document ready */
 $(document).ready(function () {
     /* Semantic UI Initialization */
     $('.tabbing.menu .item').tab();
@@ -222,9 +235,10 @@ $(document).ready(function () {
     /* End of Semantic UI Initialization */
 });</code>
             </pre>
+                    </section>
                 </div>
 
-                <div class="twelve wide column article-extras">
+                <div class="twelve wide column article-extras scrollspy" data-target="nav-comments">
                     <div class="ui comments sixteen wide column">
                         <h3 class="ui dividing header">Comments</h3>
                         <div class="comment">
@@ -557,6 +571,25 @@ $(document).ready(function () {
             });
             mosaic.fitZone($(window).width() - 30, $(window).height() - 30);
         });
+    });
+
+    $(function () {
+        $('.scrollspy')
+                .visibility({
+                    onTopPassed: function () {
+                        $(this.dataset.target).css("font-weight", "bold");
+                    },
+                    onBottomPassedReverse: function () {
+                        $(this.dataset.target).css("font-weight", "bold");
+                    },
+                    onBottomPassed: function () {
+                        $(this.dataset.target).css("font-weight", "normal");
+                    },
+                    onTopPassedReverse: function () {
+                        $(this.dataset.target).css("font-weight", "normal");
+                    }
+                });
+
     });
 </script>
 </body>

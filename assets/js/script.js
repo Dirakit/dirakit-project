@@ -56,9 +56,9 @@ function addStep() {
         "<div class='sixteen wide field ui segment'>" +
         "Drop Here to Upload Image and Click to Delete" +
         "<div class='ui small images'>" +
-        "<img class='image' src='./assets/images/10.png'/>" +
-        "<img class='image' src='./assets/images/10.png'/>" +
-        "<img class='image' src='./assets/images/10.png'/>" +
+        "<img class='image' src='./assets/images/10.png' onclick='deleteImage()'/>" +
+        "<img class='image' src='./assets/images/10.png' onclick='deleteImage()'/>" +
+        "<img class='image' src='./assets/images/10.png' onclick='deleteImage()'/>" +
         "</div>" +
         "</div>" +
         "<div class='sixteen wide field'>" +

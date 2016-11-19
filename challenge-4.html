@@ -141,6 +141,18 @@
         </div>
     </footer>
 </div>
+
+<div class="ui mini modal" id="delete-image">
+    <div class="header">Yakin Hapus Gambar ini?</div>
+    <div class="content center aligned">
+        <img src="assets/images/10.png" alt="">
+    </div>
+    <div class="actions">
+        <button class="ui cancel red button">Batal</button>
+        <button class="ui approve green button">Hapus</button>
+    </div>
+</div>
+
 <script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="semantic/dist/semantic.min.js"></script>
 <script type="text/javascript" src="assets/js/froala_editor.min.js"></script>
@@ -150,6 +162,11 @@
     $(document).ready(function () {
         addStep();
     });
+    function deleteImage() {
+        $('#delete-image').modal('show', {
+            closable: false
+        });
+    }
 </script>
 </body>
 </html>

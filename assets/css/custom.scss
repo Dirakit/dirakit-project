@@ -272,7 +272,6 @@ div > footer.jumbotron {
   overflow: hidden;
   vertical-align: middle;
   text-align: center;
-  justify-content: center;
   display: flex !important;
   background: white !important;
   img {
@@ -309,7 +308,7 @@ article.platform .card .content, .center {
   margin: 1rem 0;
 }
 
-.login, .register, .drafts, .dimmed {
+.login, .register, .drafts {
   min-height: 100vh;
 }
 

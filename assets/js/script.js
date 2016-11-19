@@ -2,7 +2,7 @@
 $(document).ready(function () {
     /* Semantic UI Initialization */
     $('.tabbing.menu .item').tab();
-    $('.special.card .image').dimmer({on: 'hover'});
+    $('.special.card .image, .ui.tiny.images .image').dimmer({on: 'hover'});
     $('.ui.images > .image').click(function () {
         $('.ui.modal').modal('show');
     });
@@ -53,7 +53,13 @@ function addStep() {
         "<div class='sixteen wide field'>" +
         "<input type='text' placeholder='Judul Intro'>" +
         "</div>" +
-        "<div class='sixteen wide field'>" +
+        "<div class='sixteen wide field ui segment'>" +
+        "Drop Here to Upload Image and Click to Delete" +
+        "<div class='ui small images'>" +
+        "<img class='image' src='./assets/images/10.png'/>" +
+        "<img class='image' src='./assets/images/10.png'/>" +
+        "<img class='image' src='./assets/images/10.png'/>" +
+        "</div>" +
         "</div>" +
         "<div class='sixteen wide field'>" +
         "<textarea name='step' class='challenge-step-" + counter + "' rows='30'></textarea>" +

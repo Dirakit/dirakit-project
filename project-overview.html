@@ -12,6 +12,11 @@
             width: 100%;
             margin: auto;
         }
+
+        .mosaic-item {
+            max-width: 420px;
+            max-height: 420px;
+        }
     </style>
 </head>
 <body>
@@ -89,7 +94,7 @@
                     <a href="#" class="ui mini tag label">robotik</a>
                 </div>
 
-                <div class="ui mini statistics">
+                <div class="ui mini statistics white">
                     <div class="statistic">
                         <div class="value">
                             <i class="unhide icon"></i> 22
@@ -552,30 +557,26 @@ $(document).ready(function () {
         $('.right-bar').sticky({
             context: '#related-articles'
         });
+    });
 
-        $('pre code').each(function (i, block) {
-            hljs.highlightBlock(block);
+    $(function () {
+        var mosaic = new Freewall('.mosaic-container');
+        mosaic.reset({
+            selector: '.mosaic-item',
+            animate: false,
+            cellW: 420,
+            cellH: 420,
+            gutterY: 10,
+            onResize: function () {
+                mosaic.refresh($(window).width() - 30, $(window).height() - 30);
+            }
         });
-        $(function () {
-            var mosaic = new Freewall('.mosaic-container');
-            mosaic.reset({
-                selector: '.mosaic-item',
-                animate: false,
-                cellW: 420,
-                cellH: 420,
-                gutterY: 10,
-                gutterX: auto,
-                onResize: function () {
-                    mosaic.refresh($(window).width() - 30, $(window).height() - 30);
-                }
-            });
-            mosaic.fitZone($(window).width() - 30, $(window).height() - 30);
-        });
+        mosaic.fitZone($(window).width() - 30, $(window).height() - 30);
     });
 
     $(function () {
         $('.scrollspy')
-                .visibility({
+                .visibility('refresh', {
                     onTopPassed: function () {
                         $(this.dataset.target).css("font-weight", "bold");
                     },
@@ -587,7 +588,9 @@ $(document).ready(function () {
                     },
                     onTopPassedReverse: function () {
                         $(this.dataset.target).css("font-weight", "normal");
-                    }
+                    },
+                    refreshOnLoad: true,
+                    refreshOnResize: true
                 });
 
     });

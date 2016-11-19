@@ -237,6 +237,10 @@ div > footer.jumbotron {
 .ui.statistic > .value, .ui.statistics .statistic > .value {
   font-size: 2.5rem !important;
 }
+.ui.mini.statistics.white, .ui.mini.statistics.white .statistic > .value {
+  color: white !important;
+
+}
 
 .ui.sticky.fixed {
   margin-top: 5rem !important;

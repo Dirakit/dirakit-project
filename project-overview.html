@@ -560,18 +560,9 @@ $(document).ready(function () {
     });
 
     $(function () {
-        var mosaic = new Freewall('.mosaic-container');
-        mosaic.reset({
-            selector: '.mosaic-item',
-            animate: false,
-            cellW: 838,
-            cellH: 838,
-            gutterY: 10,
-            onResize: function () {
-                mosaic.refresh($(window).width() - 30, $(window).height() - 30);
-            }
-        });
-        mosaic.fitZone($(window).width() - 30, $(window).height() - 30);
+        $('.mosaic-item').click(function () {
+            $('.ui.modal').modal('show');
+        })
     });
 
     $(function () {

@@ -350,8 +350,8 @@ td .button {
   max-height: inherit;
 }
 
-.mosaic-item:after {
-  clear: left;
+.mosaic-item::after {
+  clear: both;
 }
 // Import prism
 

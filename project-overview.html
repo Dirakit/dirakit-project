@@ -553,9 +553,9 @@ $(document).ready(function () {
 <script type="text/javascript" src="assets/js/freewall.js"></script>
 <script type="text/javascript" src="assets/js/script.js"></script>
 <script>
-    $(document).ready(function () {
+    $(function () {
         $('.right-bar').sticky({
-            context: '#related-articles'
+            observeChanges: true
         });
     });
 
@@ -590,7 +590,8 @@ $(document).ready(function () {
                         $(this.dataset.target).css("font-weight", "normal");
                     },
                     refreshOnLoad: true,
-                    refreshOnResize: true
+                    refreshOnResize: true,
+                    observeChanges: true
                 })
         ;
 

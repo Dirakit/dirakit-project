@@ -10,7 +10,7 @@ $(document).ready(function () {
     $('.slider.control').click(function () {
         $('.ui.sidebar.inverted.vertical.menu').sidebar('toggle');
     });
-    $('img').visibility({
+    $('img[data-src]').visibility({
         type: 'image',
         transition: 'fade in',
         duration: 1000
@@ -36,10 +36,6 @@ $(document).ready(function () {
     });
     /* End of Semantic UI Initialization */
 });
-
-function initFroala() {
-    $(this).froalaEditor();
-}
 
 $('.add-step').click(function () {
     addStep();

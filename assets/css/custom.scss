@@ -346,8 +346,8 @@ td .button {
 }
 
 .mosaic-item > img {
-  max-width: inherit;
-  max-height: inherit;
+  width: 100%;
+  height: auto;
 }
 
 .mosaic-item::after {

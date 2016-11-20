@@ -253,9 +253,9 @@ $(document).ready(function () {
                                 </div>
                                 <div class="text">
                                     How artistic!
-                                <v class="actions">/div>
+                                    <v class="actions">/div>
 
-                                    <a class="reply">Reply</a>
+                                        <a class="reply">Reply</a>
                                 </div>
                             </div>
                         </div>
@@ -559,22 +559,33 @@ $(document).ready(function () {
             $('.ui.modal').modal('show');
         })
     });
+    function initMosaic() {
+        $('.mosaic-container').each(function () {
+            function resizeStepsImages() {
+                var mosaicContainer = $(this);
+                var mosaicItem = mosaicContainer.children('.mosaic-item');
+                var countMosaicItem = mosaicItem.length;
+                var containerWidth = mosaicContainer.width();
+                var itemWidth = containerWidth / 2 - 10;
+                var itemHeight = containerWidth / 3 - 10;
 
-    $('.mosaic-container').each(function () {
-        var mosaicContainer = $(this);
-        var mosaicItem = mosaicContainer.children('.mosaic-item');
-        var countMosaicItem = mosaicItem.length;
-        var containerWidth = mosaicContainer.width();
-        var itemWidth = containerWidth / 2 - 10;
-        var itemHeight = containerWidth / 3 - 10;
+                mosaicItem.css('width', itemWidth);
+                mosaicItem.css('height', itemHeight);
 
-        mosaicItem.css('width', itemWidth);
-        mosaicItem.css('height', itemHeight);
+                if (countMosaicItem % 2 == 1) {
+                    mosaicContainer.children('.mosaic-item:eq(0)').css('width', containerWidth - 10);
+                }
+            }
 
-        if (countMosaicItem % 2 == 1) {
-            mosaicContainer.children('.mosaic-item:eq(0)').css('width', containerWidth - 10);
-        }
+            resizeStepsImages.call(this);
+        });
+    }
+    $(window).resize(function () {
+        initMosaic();
+    });
 
+    $(window).ready(function () {
+        initMosaic();
     });
 
     $(function () {

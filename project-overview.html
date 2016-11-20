@@ -14,8 +14,8 @@
         }
 
         .mosaic-item {
-            max-width: 420px;
-            max-height: 420px;
+            max-width: 838px;
+            max-height: 838px;
         }
     </style>
 </head>
@@ -564,8 +564,8 @@ $(document).ready(function () {
         mosaic.reset({
             selector: '.mosaic-item',
             animate: false,
-            cellW: 420,
-            cellH: 420,
+            cellW: 838,
+            cellH: 838,
             gutterY: 10,
             onResize: function () {
                 mosaic.refresh($(window).width() - 30, $(window).height() - 30);
@@ -576,7 +576,7 @@ $(document).ready(function () {
 
     $(function () {
         $('.scrollspy')
-                .visibility('refresh', {
+                .visibility({
                     onTopPassed: function () {
                         $(this.dataset.target).css("font-weight", "bold");
                     },
@@ -591,7 +591,8 @@ $(document).ready(function () {
                     },
                     refreshOnLoad: true,
                     refreshOnResize: true
-                });
+                })
+        ;
 
     });
 </script>

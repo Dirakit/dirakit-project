@@ -331,6 +331,28 @@ td .button {
 .ui.sticky.right-bar {
   width: 270px;
 }
+
+.mosaic-container {
+  width: 100%;
+  margin: auto;
+}
+
+.mosaic-item {
+  float: left;
+  margin: 5px;
+  overflow: hidden;
+  max-width: 838px;
+  max-height: 838px;
+}
+
+.mosaic-item > img {
+  max-width: inherit;
+  max-height: inherit;
+}
+
+.mosaic-item:after {
+  clear: left;
+}
 // Import prism
 
 @import "tabletonly";

@@ -7,17 +7,6 @@
     <title>Dirakit</title>
     <link rel="stylesheet" href="semantic/dist/semantic.min.css">
     <link rel="stylesheet" href="assets/css/custom.css">
-    <style>
-        .mosaic-container {
-            width: 100%;
-            margin: auto;
-        }
-
-        .mosaic-item {
-            max-width: 838px;
-            max-height: 838px;
-        }
-    </style>
 </head>
 <body>
 
@@ -176,13 +165,12 @@
                     </section>
                     <section class="scrollspy" data-target="#nav-steps">
                         <h3>Langkah-langkah</h3>
-                        <div class="mosaic-container">
-                            <img src="assets/images/home-smoke.jpg" class="mosaic-item" alt="Langkah 1">
-                            <img src="assets/images/home-smoke.jpg" class="mosaic-item" alt="Langkah 2">
-                            <img src="assets/images/home-smoke.jpg" class="mosaic-item" alt="Langkah 3">
-                            <img src="assets/images/home-smoke.jpg" class="mosaic-item" alt="Langkah 4">
-                            <img src="assets/images/home-smoke.jpg" class="mosaic-item" alt="Langkah 5">
-                            <img src="assets/images/home-smoke.jpg" class="mosaic-item" alt="Langkah 6">
+                        <div class="mosaic-container" id="mosaic-1">
+                            <div class="mosaic-item"><img src="assets/images/home-smoke.jpg" alt="Langkah 1"></div>
+                            <div class="mosaic-item"><img src="assets/images/home-smoke.jpg" alt="Langkah 2"></div>
+                            <div class="mosaic-item"><img src="assets/images/home-smoke.jpg" alt="Langkah 3"></div>
+                            <div class="mosaic-item"><img src="assets/images/home-smoke.jpg" alt="Langkah 4"></div>
+                            <div class="mosaic-item"><img src="assets/images/home-smoke.jpg" alt="Langkah 5"></div>
                         </div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam animi dignissimos doloribus
                             dolorum
@@ -222,6 +210,14 @@
                     </section>
                     <section class="scrollspy" data-target="#nav-finishing">
                         <h3>Finishing</h3>
+                        <div class="mosaic-container" id="mosaic-2">
+                            <div class="mosaic-item"><img src="assets/images/home-smoke.jpg" alt="Langkah 1"></div>
+                            <div class="mosaic-item"><img src="assets/images/home-smoke.jpg" alt="Langkah 2"></div>
+                            <div class="mosaic-item"><img src="assets/images/home-smoke.jpg" alt="Langkah 3"></div>
+                            <div class="mosaic-item"><img src="assets/images/home-smoke.jpg" alt="Langkah 4"></div>
+                            <div class="mosaic-item"><img src="assets/images/home-smoke.jpg" alt="Langkah 4"></div>
+                            <div class="mosaic-item"><img src="assets/images/home-smoke.jpg" alt="Langkah 4"></div>
+                        </div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam culpa deleniti et ipsum
                             iure
                             maxime
@@ -257,8 +253,8 @@ $(document).ready(function () {
                                 </div>
                                 <div class="text">
                                     How artistic!
-                                </div>
-                                <div class="actions">
+                                <v class="actions">/div>
+
                                     <a class="reply">Reply</a>
                                 </div>
                             </div>
@@ -565,6 +561,25 @@ $(document).ready(function () {
         })
     });
 
+    $('.mosaic-container').each(function () {
+        var mosaicContainer = $(this);
+        var mosaicItem = mosaicContainer.children('.mosaic-item');
+        var countMosaicItem = mosaicItem.length;
+        console.log(countMosaicItem);
+        var containerWidth = mosaicContainer.width();
+        var itemWidth = containerWidth / 2 - 10;
+        var itemHeight = containerWidth / 3 - 10;
+        console.log(itemWidth);
+
+        mosaicItem.css('width', itemWidth);
+        mosaicItem.css('height', itemHeight);
+
+        if (countMosaicItem % 2 == 1) {
+            mosaicContainer.children('.mosaic-item:eq(0)').css('width', containerWidth - 10);
+        }
+
+    });
+
     $(function () {
         $('.scrollspy')
                 .visibility({
@@ -585,7 +600,6 @@ $(document).ready(function () {
                     observeChanges: true
                 })
         ;
-
     });
 </script>
 </body>

@@ -564,11 +564,9 @@ $(document).ready(function () {
         var mosaicContainer = $(this);
         var mosaicItem = mosaicContainer.children('.mosaic-item');
         var countMosaicItem = mosaicItem.length;
-        console.log(countMosaicItem);
         var containerWidth = mosaicContainer.width();
         var itemWidth = containerWidth / 2 - 10;
         var itemHeight = containerWidth / 3 - 10;
-        console.log(itemWidth);
 
         mosaicItem.css('width', itemWidth);
         mosaicItem.css('height', itemHeight);

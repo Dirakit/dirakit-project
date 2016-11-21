@@ -335,6 +335,7 @@ td .button {
 .mosaic-container {
   width: 100%;
   margin: auto;
+  overflow-y: hidden;
 }
 
 .mosaic-item {
